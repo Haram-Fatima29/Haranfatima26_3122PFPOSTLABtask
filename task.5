@@ -1,0 +1,76 @@
+#include<stdio.h>
+int main() {
+    printf("ATM Machine\n");
+    int button,account;
+    printf("User select an operations(1/2/3/4):");
+    scanf("%d",&button);
+    switch (button)
+    {
+    case 2:
+        printf("Cash Withdrawl\n");
+        printf("choose 1 for saving account 2 for current account=");
+        scanf("%d",&account);
+        switch (account)
+        {
+        case 1:
+            printf("Saving Account\n");
+            break;
+        case 2:
+            printf("Current Account");
+            break;
+        default:
+            break;
+        }
+        break;
+    case 1:
+        printf("Balance Inquiry");
+        printf("1 for sufficient balance,2 for insufficient balnce=");
+        scanf("%d",&account);
+        switch (account)
+        {
+        case 1:
+            printf("Sufficient balance\n");
+            break;
+        case 2:
+            printf("Insufficient Balance\n");
+            break;
+        default:
+            break;
+        }
+        break;
+    case 3:
+        printf("Cash Deposit");
+        printf("1 cash saving ,2 to see current cash=");
+        scanf("%d",&account);
+        switch (account)
+        {
+        case 1:
+            printf("Saving Cash\n");
+            break;
+        case 2:
+            printf("Current Cash");
+            break;
+        default:
+            break;
+        }
+        break;
+    case 4:
+        printf("PIN Change selected\n");
+        printf("1 for pin change save change 2 for chage again=" );
+        scanf("%d",account);
+        switch (account)
+        {
+        case 1:
+            printf("Saving Change\n");
+            break;
+        case 2:
+            printf("pin Change");
+            break;
+        default:
+            break;
+        }
+    default:
+        break;
+    }
+    return 0;
+}
